@@ -40,11 +40,24 @@
 		#input-area {
 			order: 4; /* Vstupní pole a tlačítko úplně dole */
 		}
+        .back-link {
+            display: block; /* Zajistí, že odkaz zabere celou šířku a umožní zarovnání */
+            text-align: left; /* Tlačí text odkazu doleva */
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: var(--primary);
+        }
     </style>
 </head>
 <body>
 
 <div class="card">
+    <a href="https://fierce-dog.github.io/poznavacky_linktree/" class="back-link">⬅ Zpět na rozcestí</a>
     <p id="msg">Máš 3 pokusy</p>
     <p id="info"></p>
     <img id="pic" src="" alt="Načítám...">
